@@ -1,0 +1,10 @@
+{
+    "jwtPrivateKey": "jobit_secretkey",
+    "db": {
+        "host": "localhost",
+        "password": "Shikasql27",
+        "port": "3306",
+        "user": "root",
+        "database": "entrepreware"
+    }
+}

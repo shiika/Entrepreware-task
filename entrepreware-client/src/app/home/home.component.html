@@ -1,0 +1,18 @@
+<form class="col-12 col-md-10 row register__infoForm" [formGroup]="client" (ngSubmit)="onSubmit()">
+  <h3 class="col-12 my-3">Phone Verification</h3>
+
+  <div class="col-12 col-md-6">
+    <mat-form-field appearance="outline">
+      <mat-label>Phone number</mat-label>
+      <input matInput formControlName="phone">
+      <mat-error *ngIf="client.get('phone').errors">
+        Phone number is required
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="mt-2" mat-raised-button color="primary" [disabled]="client.invalid">Verify</button>
+    <button type="submit" routerLink="/history" class="ml-4 mt-2" mat-raised-button color="accent">Go to history</button>
+</div>
+  </form>

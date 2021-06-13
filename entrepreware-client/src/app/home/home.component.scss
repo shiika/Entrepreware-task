@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+h3 {
+    color: $heading-color;
+    @include heading-underline;
+}
+
+mat-form-field {
+    width: 100%;
+}
+.register {
+    height: 100vh;
+
+    &__infoForm {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+    .mat-standard-chip {
+        border-radius: 8px !important;
+    }
+
+}
+  
